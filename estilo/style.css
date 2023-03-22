@@ -71,6 +71,11 @@ section {
     font-family: var(--font3);
 }
 
+section > p {
+    /*separa as estrofes que estão em 2 p's diferentes que ficaram juntas*/
+    padding-bottom: 2em;
+}
+
 /*para as sections da classe normal*/
 section.normal {
     background-color: white;
@@ -81,6 +86,19 @@ section.imagem {
     background-color: rgb(66, 66, 66);
     color: white;
     margin-left: -10px;
+    padding-top: 15px ;
+    padding-bottom: 15px;
+}
+
+/*para id img01 das section's*/
+section#img01{
+    background-image: url(../imagens/background001.jpg);
+    background-position: center center;
+}
+
+section#img02{
+    background-image: url(../imagens/background002.jpg);
+    background-position: left bottom;
 }
 
 /*dentro do paragravo da section da classe imagem ira ter um fundo pra propria imagem não atrapalhar a leitura se houver pontos da mesma cor*/
