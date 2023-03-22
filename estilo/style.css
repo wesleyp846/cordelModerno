@@ -88,28 +88,35 @@ section.imagem {
     margin-left: -10px;
     padding-top: 15px ;
     padding-bottom: 15px;
+    /*sombra no box, inset a sombra fica pra dentro
+    dois primeiros é posição, espalhamento, ampliação*/
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.404);
+    /*para não cortar a imagem conforme tamanho da tela*/
+    background-size: cover;
+    /*para fixar a imagem no fundo e o conteudo rolar por cima*/
+    background-attachment: fixed;
 }
 
 /*para id img01 das section's*/
 section#img01{
     background-image: url(../imagens/background001.jpg);
-    background-position: center center;
+    background-position: right center;
 }
 
 section#img02{
     background-image: url(../imagens/background002.jpg);
-    background-position: left bottom;
 }
 
 /*dentro do paragravo da section da classe imagem ira ter um fundo pra propria imagem não atrapalhar a leitura se houver pontos da mesma cor*/
 section.imagem > p {
     /*box bem transparente*/
-    background-color: rgba(0, 0, 0, 0.251);
+    background-color: rgba(0, 0, 0, 0.51);
     /*evita que o box seja maior que o necessário, quanto mais testo, mais px*/
     width: 230px;
     padding: 10px;
     /*se adapta ao conteudo, relativo a tamanho*/
     display: inline-block;
+    text-shadow: 1px 1px 2px black;
 }
 
 footer {
