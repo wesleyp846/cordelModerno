@@ -73,7 +73,8 @@ section.imagem > p {
     /*box bem transparente*/
     background-color: rgba(0, 0, 0, 0.251);
     /*evita que o box seja maior que o necessário, quanto mais testo, mais px*/
-    width: 200px;
+    width: 230px;
+    padding: 0px 10px 0px 10px;
 }
 
 footer {
