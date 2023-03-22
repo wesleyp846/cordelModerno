@@ -91,16 +91,16 @@ section.imagem {
     /*sombra no box, inset a sombra fica pra dentro
     dois primeiros é posição, espalhamento, ampliação*/
     box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.404);
-    /*para não cortar a imagem conforme tamanho da tela*/
-    background-size: cover;
     /*para fixar a imagem no fundo e o conteudo rolar por cima*/
     background-attachment: fixed;
+    /*para não cortar a imagem conforme tamanho da tela*/
+    background-size: cover;
 }
 
 /*para id img01 das section's*/
 section#img01{
     background-image: url(../imagens/background001.jpg);
-    background-position: right center;
+    background-position: center center;
 }
 
 section#img02{
