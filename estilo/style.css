@@ -1,5 +1,84 @@
+/**/
 @charset "UTF-8";
 
-body{
-    background-color: rgb(247, 174, 66);
+/*configuração geral para todos os elementos
+margin e padding de 0 vai fazer tudo ficar mais grudado inicialmente*/
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+/*configurações de html e bady que terão em comun*/
+html, body {
+    background-color: darkgrey;
+    /*o tamanho minimo de altura de ambos será 100% de Viewport*/
+    min-height: 100vh;
+}
+
+header{
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+/*So serve para H1 dentro do header*/
+header > h1 {
+    /*Pra dar um espacinho do titulo, não deixa colar no topo do navegador*/
+    padding-top: 50px;
+    /*Variante de fonte: todas letra maiusculas com iniciais maiores*/
+    font-variant: small-caps;
+}
+
+header > p {
+    padding-bottom: 50px;
+}
+
+/*header a, footer a, para não afetar o que esta dentro do conteudo*/
+header a, footer a {
+    /*sempre branco*/
+    color: white;
+    /*tirar subilinhado*/
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+/*quando passar o mouse encima*/
+header a:hover, footer a:hover {
+    text-decoration: underline;
+}
+
+/*grante que todas as section sejam exibidas com um espacinho de 10% encima e embaixo da viewport*/
+section {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    /*espaçamento duplo entre linhas*/
+    line-height: 2em;
+    /*afasta do canto da tela*/
+    padding-left: 30px;
+}
+
+/*para as sections da classe normal*/
+section.normal {
+    background-color: white;
+    color: black;
+}
+
+section.imagem {
+    background-color: rgb(66, 66, 66);
+    color: white;
+}
+
+/*dentro do paragravo da section da classe imagem ira ter um fundo pra propria imagem não atrapalhar a leitura se houver pontos da mesma cor*/
+section.imagem > p {
+    /*box bem transparente*/
+    background-color: rgba(0, 0, 0, 0.251);
+    /*evita que o box seja maior que o necessário, quanto mais testo, mais px*/
+    width: 200px;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
 }
